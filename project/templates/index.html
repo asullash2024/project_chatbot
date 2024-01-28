@@ -20,7 +20,7 @@
       <div id="input">
         <form action="/a/message/new" method="post" id="messageform">
           <div class="form-group input-container">
-            <input class="form-control" type="text" name="body" id="message-input" placeholder="请输入消息">
+            <input class="form-control" type="text" name="body" id="message-input" placeholder="Enter here">
             <button type="submit" class="btn btn-info">Enter</button>
             <input type="hidden" name="next" value="{{ request.path }}">
             {% module xsrf_form_html() %}
